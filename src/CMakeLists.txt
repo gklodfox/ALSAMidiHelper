@@ -1,10 +1,6 @@
 cmake_minimum_required(VERSION 3.15...3.31)
 
-set(
-  HEADER_LIST 
-  "${ALSAMidiHelper_SOURCE_DIR}/include/app_public/application.hpp"
-  "${ALSAMidiHelper_SOURCE_DIR}/include/app_public/main.hpp"
-)
+file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${ALSAMidiHelper_SOURCE_DIR}/include/app_public/*.hpp")
 
 add_library(application application.cpp ${HEADER_LIST})
 
