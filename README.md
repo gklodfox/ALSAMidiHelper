@@ -1,1 +1,1 @@
-# Helper for MIDI controller wiith ALSA!
+# Helper for MIDI controller wiith ALSA
